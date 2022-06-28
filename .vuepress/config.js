@@ -56,7 +56,7 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "友链",
         "icon": "reco-message",
         "items": [
           {
@@ -79,12 +79,12 @@ module.exports = {
     "type": "blog",
     "blogConfig": {
       "category": {
-        "location": 2,
-        "text": "Category"
+        "location": 5,
+        "text": "分类"
       },
       "tag": {
-        "location": 3,
-        "text": "Tag"
+        "location": 6,
+        "text": "标签"
       }
     },
     "friendLink": [
