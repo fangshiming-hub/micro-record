@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: 微世人
+tagline: 未来虽远,目光更远
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
