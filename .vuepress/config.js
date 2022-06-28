@@ -40,9 +40,13 @@ module.exports = {
             "link": "/docs/html/"
           },
           {
-            "text": "ccss",
+            "text": "css",
             "link": "/docs/css/"
-          }
+          },
+          {
+            "text": "typeScript",
+            "link": "/docs/typeScript/"
+          },
         ]
       },
       {
@@ -74,6 +78,17 @@ module.exports = {
         "theme",
         "plugin",
         "api"
+      ],
+      "/docs/typeScript/": [
+        "",
+        "BasicType",
+        "Variable",
+        // "03接口",
+        // "04类",
+        // "05函数",
+        // "06泛型",
+        // "07枚举",
+        // "08高级类型"
       ]
     },
     "type": "blog",
