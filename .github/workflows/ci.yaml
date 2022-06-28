@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets._USERNAME }}
           password: ${{ secrets._PASSWORD }}
           port: ${{ secrets._PORT }}
-          source: 'docs/.vuepress/dist/*'
+          source: 'public/*'
           target: '/usr/local/doc/'
           strip_components: 3
 
