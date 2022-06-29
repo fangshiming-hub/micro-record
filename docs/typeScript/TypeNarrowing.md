@@ -4,7 +4,7 @@ date: 2022/6/29
 ---
 
 ### 控制流收窄
-```JavaScript
+```TypeScript
 function add() {
   let x : string | number | boolean
   x = Math.random() < 0.5
@@ -20,4 +20,27 @@ function add() {
   return x
   // x: string | number,  不会有boolean
 }
+```
+
+### 可辨别联合
+```TypeScript
+interface Circle {
+  kind: "circle";
+  radius: number;
+}
+ 
+interface Square {
+  kind: "square";
+  sideLength: number;
+}
+ 
+type Shape = Circle | Square;
+
+function getArea(shape: Shape){
+  if(shape.kind === 'circle'){
+    return Math.PI * shape.radius ** 2
+  }
+  return shape.sideLength ** 2
+}
+
 ```
