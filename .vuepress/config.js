@@ -83,6 +83,7 @@ module.exports = {
         "",
         "BasicType",
         "Variable",
+        "TypeNarrowing",
         // "03接口",
         // "04类",
         // "05函数",
