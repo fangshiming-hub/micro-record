@@ -1,6 +1,10 @@
 ---
 title: 类型收窄
 date: 2022/6/29
+tags:
+ - ts
+categories:
+ - ts
 ---
 
 ### 控制流收窄
@@ -22,7 +26,7 @@ function add() {
 }
 ```
 
-### 可辨别联合
+### 可辨别联合收窄
 ```TypeScript
 interface Circle {
   kind: "circle";

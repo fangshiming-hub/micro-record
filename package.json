@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "author": "fangshiming",
   "scripts": {
-    "dev": "vuepress dev --temp .temp . --open --host \"localhost\"" ,
+    "dev": "vuepress dev --temp .temp . --open --host \"localhost\"",
     "build": "vuepress build ."
   },
   "devDependencies": {
     "vuepress": "1.8.2",
+    "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-theme-reco": "1.6.10"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "moment": "^2.29.3"
+  }
 }

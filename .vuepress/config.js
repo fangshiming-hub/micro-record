@@ -1,7 +1,6 @@
 module.exports = {
   "title": "微记",
   "description": "",
-  "dest": "public",
   "head": [
     [
       "link",
@@ -20,6 +19,7 @@ module.exports = {
   ],
   "theme": "reco",
   "themeConfig": {
+    mode: "dark",
     "nav": [
       {
         "text": "首页",
@@ -120,13 +120,30 @@ module.exports = {
     "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "最后更新于",
     "author": "fangshiming",
     "authorAvatar": "/avatar.png",
-    "record": "xxxx",
+    "record": "微世人",
     "startYear": "2022"
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
+  "plugins": [
+    ["one-click-copy", {
+      "copyMessage": "复制成功",
+      "toolTipMessage": "点击复制"
+    }],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
+          const moment = require('moment')
+          // moment.locale(lang)
+          return moment(timestamp).format('YYYY-MM-DD HH:mm')
+        }
+      }
+    ]
+  ]
 }
