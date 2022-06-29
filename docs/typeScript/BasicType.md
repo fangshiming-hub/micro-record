@@ -89,7 +89,7 @@ arr.map((item) => {
 
 ```TypeScript
 let obj: any = { x: 0 };
-// 以下行为是被允许的，尽管可能会出错， 去掉any的类型则会报错
+// 以下行为是被允许的，尽管可能会出错， 去掉any的类型注解则会报错
 obj.foo();
 obj();
 obj.bar = 100;
