@@ -93,7 +93,7 @@ module.exports = {
       ],
       "/docs/javaScript/": [
         "",
-        "ToolFunction"
+        "ToolFunctions"
       ],
       
     },
