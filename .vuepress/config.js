@@ -90,7 +90,12 @@ module.exports = {
         // "06泛型",
         // "07枚举",
         // "08高级类型"
-      ]
+      ],
+      "/docs/javaScript/": [
+        "",
+        "ToolFunction",
+      ],
+      
     },
     "type": "blog",
     "blogConfig": {
