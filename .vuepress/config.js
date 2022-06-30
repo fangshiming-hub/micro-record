@@ -93,7 +93,7 @@ module.exports = {
       ],
       "/docs/javaScript/": [
         "",
-        "ToolFunction",
+        "ToolFunction"
       ],
       
     },
@@ -143,9 +143,7 @@ module.exports = {
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
-          // 不要忘了安装 moment
           const moment = require('moment')
-          console.log(lang,timestamp);
           moment.locale('zh-cn')
           return moment(timestamp).format('YYYY-MM-DD HH:mm')
         }
