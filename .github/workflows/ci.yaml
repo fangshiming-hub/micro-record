@@ -25,7 +25,7 @@ jobs:
       - name: install nodejs # 步骤2
         uses: actions/setup-node@v2.5.1 # 作用：安装nodejs
         with:
-          node-version: '14.x' # 版本
+          node-version: '16.x' # 版本
       - name: install deps # 步骤3
         run: npm install
       - name: build app
