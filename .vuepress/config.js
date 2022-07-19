@@ -27,28 +27,37 @@ module.exports = {
         "icon": "reco-home"
       },
       {
-        "text": "前端",
-        "link": "/timeline/",
-        "icon": "reco-date",
-        "items": [
-          {
-            "text": "javaScript",
-            "link": "/docs/javaScript/"
-          },
-          {
-            "text": "html",
-            "link": "/docs/html/"
-          },
-          {
-            "text": "css",
-            "link": "/docs/css/"
-          },
-          {
-            "text": "typeScript",
-            "link": "/docs/typeScript/"
-          },
-        ]
+        "text": "JS篇",
+        "link": "/docs/javaScript/",
+        "icon": "reco-message"
       },
+      {
+        "text": "TS篇",
+        "link": "/docs/typeScript/",
+        "icon": "reco-message"
+      },
+      // {
+      //   "text": "前端",
+      //   "icon": "reco-date",
+      //   "items": [
+      //     {
+      //       "text": "javaScript",
+      //       "link": "/docs/javaScript/"
+      //     },
+      //     {
+      //       "text": "html",
+      //       "link": "/docs/html/"
+      //     },
+      //     {
+      //       "text": "css",
+      //       "link": "/docs/css/"
+      //     },
+      //     {
+      //       "text": "typeScript",
+      //       "link": "/docs/typeScript/"
+      //     },
+      //   ]
+      // },
       {
         "text": "工具",
         "icon": "reco-message",
@@ -84,6 +93,19 @@ module.exports = {
         "BasicType",
         "Variable",
         "TypeNarrowing",
+        // "03接口",
+        // "04类",
+        // "05函数",
+        // "06泛型",
+        // "07枚举",
+        // "08高级类型"
+      ],
+      "/docs/javaScript/": [
+        "",
+        "toolFunction",
+        "forThis",
+        // "Variable",
+        // "TypeNarrowing",
         // "03接口",
         // "04类",
         // "05函数",

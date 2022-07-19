@@ -2,6 +2,10 @@
 title: 常见类型声明
 date: 2020-05-29
 sidebar: auto
+tags:
+ - ts
+categories:
+ - ts
 ---
 
 ## 基本类型
