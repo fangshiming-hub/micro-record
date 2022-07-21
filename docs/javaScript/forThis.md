@@ -23,7 +23,16 @@ console.log(this === window) // true
 在箭头函数中，this的指向通常是由外层作用域来决定的
 
 ## 通过`apply`、`call`、`bind`改变的this
-
+  三者都是通过函数调用,都能改变函数中this的指向,箭头函数不生效
+  * call和apply都是即时调用函数,改变this指向,两者的主要区别是参数的不同
+    ```JavaScript
+      function.call(thisArg, arg1, arg2, ...)
+      function.apply(thisArg, argArray)
+    ```
+  * bind是返回一个绑定了指定上下文的函数
+    ```javascript
+      const newFunction = function.bind(this, arg1, arg2, ...)
+    ```
 ## this的优先级
 
 ## dom事件处理函数中的this
