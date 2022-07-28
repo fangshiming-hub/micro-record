@@ -59,12 +59,12 @@ module.exports = {
       //   ]
       // },
       {
-        "text": "工具",
-        "icon": "reco-message",
+        "text": "常见问题",
+        "icon": "reco-question",
         "items": [
           {
-            "text": "webpack",
-            "link": "/docs/webpack/"
+            "text": "http",
+            "link": "/docs/question/"
           }
         ]
       },
@@ -82,11 +82,11 @@ module.exports = {
     ],
     // "sidebar": "auto",
     "sidebar": {
-      "/docs/webpack/": [
+      "/docs/question/": [
         "",
-        "theme",
-        "plugin",
-        "api"
+        "httpQuestion",
+        // "plugin",
+        // "api"
       ],
       "/docs/typeScript/": [
         "",
