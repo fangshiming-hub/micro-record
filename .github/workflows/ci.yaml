@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets._USERNAME }}
           password: ${{ secrets._PASSWORD }}
           port: ${{ secrets._PORT }}
-          source: './dist/*'
+          source: 'dist/*'
           target: '/usr/local/docs/'
           strip_components: 3
 
