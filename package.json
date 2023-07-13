@@ -1,18 +1,23 @@
 {
-  "name": "micro-record",
-  "version": "1.0.0",
-  "author": "fangshiming",
+  "name": "vite-vue3",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "vuepress dev --temp .temp . --open --host \"localhost\"",
-    "build": "vuepress build ."
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "element-plus": "^2.3.7",
+    "face-api.js": "^0.22.2",
+    "vue": "^3.2.47",
+    "vue-router": "^4.2.2"
   },
   "devDependencies": {
-    "vuepress": "1.8.2",
-    "vuepress-plugin-one-click-copy": "^1.0.6",
-    "vuepress-theme-reco": "1.6.10"
-  },
-  "description": "",
-  "dependencies": {
-    "moment": "^2.29.3"
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
   }
 }
