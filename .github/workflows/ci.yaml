@@ -31,13 +31,13 @@ jobs:
       - name: build app
         run: npm run build
       - name: copy dist file with scp
-        uses: appleboy/scp-action@master
+        uses: appleboy/scp-action@v0.1.4
         with: 
           host: ${{ secrets._HOST }}
           username: ${{ secrets._USERNAME }}
           password: ${{ secrets._PASSWORD }}
           port: ${{ secrets._PORT }}
-          source: './dist/index.html'
+          source: './dist/*'
           target: '/usr/local/docs'
           strip_components: 0,
           overwrite: true
