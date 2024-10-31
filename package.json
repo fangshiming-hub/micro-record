@@ -11,8 +11,12 @@
   "dependencies": {
     "element-plus": "^2.3.7",
     "face-api.js": "^0.22.2",
+    "gcoord": "^1.0.6",
+    "sass": "^1.80.5",
+    "sass-loader": "^16.0.2",
     "vue": "^3.2.47",
-    "vue-router": "^4.2.2"
+    "vue-router": "^4.2.2",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",

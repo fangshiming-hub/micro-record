@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HelloWorld from '../components/HelloWorld.vue';
+import HelloWorld from '../components/MapTool.vue';
 import FaceApi from '../views/faceApi/FaceApi.vue';
 import FullScreenVue from '../components/layout/FullScreen.vue';
 import { RouteRecordRaw } from 'vue-router' ;
@@ -11,7 +11,7 @@ const routes: Array<RouteRecordRaw> = [
     component: FullScreenVue,
     children: [
       {
-        path: '',
+        path: 'map',
         component: HelloWorld,
       },
       {
@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
       }
     ]
   },
-  
+
 ]
 
 const router = createRouter({
