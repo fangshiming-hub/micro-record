@@ -1,17 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue';
-import FaceApi from '../views/faceApi/FaceApi.vue'
+import FaceApi from '../views/faceApi/FaceApi.vue';
+import FullScreenVue from '../components/layout/FullScreen.vue';
+import { RouteRecordRaw } from 'vue-router' ;
 
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: HelloWorld
+    component: FullScreenVue,
+    children: [
+      {
+        path: '',
+        component: HelloWorld,
+      },
+      {
+        path: 'face',
+        component: FaceApi
+      }
+    ]
   },
-  {
-    path: '/face',
-    component: FaceApi
-  }
+  
 ]
 
 const router = createRouter({
