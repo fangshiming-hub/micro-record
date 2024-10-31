@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HelloWorld from '../components/MapTool.vue';
+// import MapTool from '../components/MapTool.vue';
 import FaceApi from '../views/faceApi/FaceApi.vue';
 import FullScreenVue from '../components/layout/FullScreen.vue';
 import { RouteRecordRaw } from 'vue-router' ;
+import MapTool from '../components/MapTool.vue';
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -12,7 +13,7 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: 'map',
-        component: HelloWorld,
+        component: MapTool,
       },
       {
         path: 'face',

@@ -20,18 +20,14 @@
 
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
 import {onMounted, ref} from 'vue';
 import gcoord from 'gcoord';
 import { read, utils } from 'xlsx'
 
 const uploadRef = ref()
 
-const submitUpload = () => {
-  uploadRef.value.submit()
-}
-
-function uploadFile(file) {
+function uploadFile(file:any) {
   console.log(file)
   clearMap();
   if (file.raw) {
