@@ -2,26 +2,24 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import MapTool from '../components/MapTool.vue';
 import FaceApi from '../views/faceApi/FaceApi.vue';
 import FullScreenVue from '../components/layout/FullScreen.vue';
-import { RouteRecordRaw } from 'vue-router' ;
-import MapTool from '../components/MapTool.vue';
+import MapTool from '../views/map/MapTool.vue';
+import Home from '../views/home/home.vue';
 
 
-const routes: Array<RouteRecordRaw> = [
+const routes = [
   {
     path: '/',
-    component: FullScreenVue,
-    children: [
-      {
-        path: 'map',
-        component: MapTool,
-      },
-      {
-        path: 'face',
-        component: FaceApi
-      }
-    ]
+    component: Home,
+    
   },
-
+  {
+    path: '/map',
+    component: MapTool,
+  },
+  {
+    path: '/face',
+    component: FaceApi
+  }
 ]
 
 const router = createRouter({
