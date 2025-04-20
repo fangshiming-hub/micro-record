@@ -12,6 +12,7 @@
     "element-plus": "^2.3.7",
     "face-api.js": "^0.22.2",
     "gcoord": "^1.0.6",
+    "jszip": "^3.10.1",
     "sass": "^1.80.5",
     "sass-loader": "^16.0.2",
     "supercluster": "^8.0.1",
