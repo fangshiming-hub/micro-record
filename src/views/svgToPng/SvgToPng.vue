@@ -35,7 +35,9 @@
       <button @click="convertAllToPng" class="convert-btn" :disabled="isConverting">
         {{ isConverting ? '转换中...' : '全部转换为PNG' }}
       </button>
-      <button @click="downloadAll" class="download-btn" :disabled="!hasConvertedFiles">下载全部</button>
+      <button @click="downloadFiles" class="download-btn" :disabled="!hasConvertedFiles">
+        {{ files.length > 1 ? '打包下载全部' : '下载PNG' }}
+      </button>
       <button @click="resetAll" class="reset-btn">重置</button>
     </div>
   </div>
@@ -146,18 +148,29 @@ const convertAllToPng = async () => {
   }
 }
 
-// 下载所有转换后的文件
-const downloadAll = async () => {
+// 下载文件（区分单文件和多文件）
+const downloadFiles = async () => {
+  // 获取已转换的文件
+  const convertedFiles = files.value.filter(file => file.pngUrl)
+  
+  // 如果只有一个文件，直接下载
+  if (convertedFiles.length === 1) {
+    const file = convertedFiles[0]
+    const link = document.createElement('a')
+    link.href = file.pngUrl
+    link.download = file.name.replace('.svg', '.png')
+    link.click()
+    return
+  }
+  
+  // 多个文件，使用zip打包下载
   const zip = new JSZip()
   
   // 添加所有已转换的PNG文件到zip
-  files.value.forEach((file, index) => {
-    if (file.pngUrl) {
-      // 从base64中提取实际的数据
-      const base64Data = file.pngUrl.replace(/^data:image\/png;base64,/, '')
-      const fileName = file.name.replace('.svg', '.png')
-      zip.file(fileName, base64Data, { base64: true })
-    }
+  convertedFiles.forEach(file => {
+    const base64Data = file.pngUrl.replace(/^data:image\/png;base64,/, '')
+    const fileName = file.name.replace('.svg', '.png')
+    zip.file(fileName, base64Data, { base64: true })
   })
   
   // 生成并下载zip文件
