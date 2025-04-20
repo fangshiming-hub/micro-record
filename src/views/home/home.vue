@@ -24,6 +24,7 @@ const router = useRouter();
 const routes = ref([
   { path: '/map', name: '地图工具' },
   { path: '/faceApi', name: '人脸识别' },
+  { path: '/svgToPng', name: 'svg转png' },
   // 可以根据需要添加更多路由
 ]);
 

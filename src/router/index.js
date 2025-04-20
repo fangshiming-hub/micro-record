@@ -4,7 +4,7 @@ import FaceApi from '../views/faceApi/FaceApi.vue';
 import FullScreenVue from '../components/layout/FullScreen.vue';
 import MapTool from '../views/map/MapTool.vue';
 import Home from '../views/home/home.vue';
-
+import SvgToPng from '../views/svgToPng/SvgToPng.vue';
 
 const routes = [
   {
@@ -19,6 +19,10 @@ const routes = [
   {
     path: '/face',
     component: FaceApi
+  },
+  {
+    path: '/svgToPng',
+    component: SvgToPng
   }
 ]
 
