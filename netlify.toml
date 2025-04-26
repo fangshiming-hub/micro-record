@@ -1,4 +1,10 @@
 [[redirects]]
+
+  # 设置blog的404
+  from = "/blog/*"
+  to = "/blog/index.html"
+  status = 200
+
   from = "/*"
   to = "/index.html"
   status = 200
