@@ -13,10 +13,12 @@
     "deploy": "npm run build && npm run docs:build"
   },
   "dependencies": {
+    "@vueuse/core": "^13.1.0",
     "element-plus": "^2.3.7",
     "face-api.js": "^0.22.2",
     "gcoord": "^1.0.6",
     "jszip": "^3.10.1",
+    "pinia": "^3.0.2",
     "sass": "^1.80.5",
     "sass-loader": "^16.0.2",
     "supercluster": "^8.0.1",
@@ -25,7 +27,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
-    "@types/node": "^20.10.4",
+    "@types/node": "^20.17.31",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.32",

@@ -52,6 +52,12 @@
   </div>
 </template>
 
+<script lang="ts"> 
+export default {
+  name: 'FaceApi'
+}
+</script>
+
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import * as faceapi from 'face-api.js'
@@ -303,7 +309,7 @@ onUnmounted(() => {
 <style scoped>
 .container {
   padding: 20px;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
   background-color: #f5f7fa;
