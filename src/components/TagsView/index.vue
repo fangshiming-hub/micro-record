@@ -97,7 +97,7 @@ const openMenu = (tag: any, e: MouseEvent) => {
 // 跳转到最后一个标签页
 const toLastView = () => {
   const latestView = visitedViews.value.slice(-1)[0]
-  if (latestView) {
+  if (latestView?.path) {
     router.push(latestView.path)
   } else {
     router.push('/')
