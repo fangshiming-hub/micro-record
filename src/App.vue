@@ -30,7 +30,7 @@ const cachedViews = computed(() => tagsViewStore.cachedViews)
   flex-direction: column;
   overflow: hidden;
   .app-header {
-    height: 60px;
+    height: 42px;
     background-color: #000;
   }
   .app-content {
