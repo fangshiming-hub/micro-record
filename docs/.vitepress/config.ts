@@ -10,17 +10,29 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Other', link: '/markdown-examples' }
     ],
 
     sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
+      {
+        text: '指南',
+        items: [
+          { text: 'Markdown示例', link: '/markdown-examples' },
+          { text: 'API示例', link: '/api-examples' }
+        ]
+      },
+      {
+        text: 'AI集成',
+        items: [
+          { text: 'Claude接入Kimi K2', link: '/ai/claude-kimi-k2' }
+        ]
+      },
+      {
+        text: '网络',
+        items: [
+          { text: 'HTTP协议', link: '/network/http' }
+        ]
+      }
     ],
 
     socialLinks: [
