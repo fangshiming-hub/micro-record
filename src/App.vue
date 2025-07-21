@@ -35,7 +35,7 @@ const cachedViews = computed(() => tagsViewStore.cachedViews)
   }
   .app-content {
     flex: 1;
-    overflow: hidden;
+    overflow-y: auto;
   }
 }
 </style>

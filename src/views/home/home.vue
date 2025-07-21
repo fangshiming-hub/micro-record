@@ -25,6 +25,7 @@ const routes = ref([
   { path: '/map', name: '地图工具' },
   { path: '/face', name: '人脸识别' },
   { path: '/svgToPng', name: 'svg转png' },
+  { path: '/grid', name: 'Grid网格布局' },
   // 可以根据需要添加更多路由
 ]);
 

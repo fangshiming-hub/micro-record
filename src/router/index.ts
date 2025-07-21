@@ -4,6 +4,7 @@ import FaceApi from '../views/faceApi/FaceApi.vue';
 import MapTool from '../views/map/MapTool.vue';
 import Home from '../views/home/home.vue';
 import SvgToPng from '../views/svgToPng/SvgToPng.vue';
+import GridLayout from '../views/grid/GridLayout.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -50,6 +51,16 @@ const routes: RouteRecordRaw[] = [
     name: 'SvgToPng',
     meta: {
       title: 'svg转png',
+      affix: false,
+      keepAlive: true
+    }
+  },
+  {
+    path: '/grid',
+    component: GridLayout,
+    name: 'GridLayout',
+    meta: {
+      title: 'Grid网格布局',
       affix: false,
       keepAlive: true
     }
